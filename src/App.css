@@ -1,0 +1,311 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f4f6fb;
+  color: #20283a;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.topbar {
+  height: 76px;
+  background: #171d32;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+}
+
+.topbar h2 {
+  font-size: 25px;
+  letter-spacing: -1px;
+}
+
+.topbar h2 span {
+  color: #8b7cff;
+}
+
+.topbar p {
+  color: #c2c8d8;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 35px 25px;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  color: #7868e8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.welcome h1 {
+  font-size: 32px;
+  margin: 8px 0;
+}
+
+.welcome p {
+  color: #7b8497;
+}
+
+.today {
+  background: white;
+  border: 1px solid #e6e9f1;
+  border-radius: 12px;
+  padding: 17px 25px;
+  font-size: 13px;
+  line-height: 2;
+  color: #68718a;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  background: white;
+  border: 1px solid #e8eaf1;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.stat-card span {
+  color: #7d8598;
+  font-size: 13px;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 29px;
+  margin-top: 10px;
+}
+
+.stat-card.overdue strong {
+  color: #dc5364;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #e8eaf1;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.panel h2 {
+  font-size: 19px;
+  margin: 0 0 8px;
+}
+
+.muted {
+  color: #8991a2;
+  font-size: 13px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 7px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dfe3ed;
+  border-radius: 7px;
+  background: white;
+  font-size: 14px;
+  color: #293247;
+}
+
+input:focus, select:focus {
+  outline: 2px solid #dcd6ff;
+  border-color: #8879ed;
+}
+
+button {
+  border: none;
+  background: #7162dc;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+button:hover {
+  background: #5e50c4;
+}
+
+.list-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.refresh {
+  margin: 0;
+  padding: 9px 14px;
+}
+
+.deadline-list {
+  margin-top: 18px;
+}
+
+.deadline-item {
+  border: 1px solid #e9ebf2;
+  border-radius: 10px;
+  padding: 17px;
+  margin-bottom: 12px;
+}
+
+.item-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.item-top h3 {
+  font-size: 15px;
+  margin: 0 0 6px;
+}
+
+.item-top p, .due-date {
+  font-size: 12px;
+  color: #8991a2;
+}
+
+.status {
+  background: #fff3d8;
+  color: #9b721a;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  height: fit-content;
+  white-space: nowrap;
+}
+
+.status.in-progress {
+  background: #e9e7ff;
+  color: #6556c5;
+}
+
+.status.completed {
+  background: #def6e9;
+  color: #258052;
+}
+
+.status.late {
+  background: #ffe4e6;
+  color: #c43d50;
+}
+
+.item-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.item-actions select {
+  max-width: 170px;
+}
+
+.item-actions button {
+  margin: 0;
+}
+
+.delete {
+  background: #fff0f0;
+  color: #c43d50;
+}
+
+.delete:hover {
+  background: #ffe0e0;
+}
+
+.empty {
+  text-align: center;
+  padding: 55px 10px;
+  color: #7d8598;
+}
+
+.empty h3 {
+  color: #394258;
+}
+
+.message {
+  background: #f0edff;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 13px;
+  color: #5948b7;
+}
+
+footer {
+  text-align: center;
+  color: #9299a8;
+  font-size: 12px;
+  padding: 35px 0 10px;
+}
+
+@media (max-width: 850px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .welcome {
+    display: block;
+  }
+
+  .today {
+    display: inline-block;
+    margin-top: 12px;
+  }
+
+  .topbar {
+    padding: 0 18px;
+  }
+}
